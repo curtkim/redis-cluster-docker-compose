@@ -4,8 +4,6 @@ services:
     image: redis:7-alpine
     container_name: redis01
     restart: always
-    ports:
-      - 7001:6379
     volumes:
       - ./redis.conf:/etc/redis/redis.conf
     command:
@@ -18,8 +16,6 @@ services:
     image: redis:7-alpine
     container_name: redis02
     restart: always
-    ports:
-      - 7002:6379
     volumes:
       - ./redis.conf:/etc/redis/redis.conf
     command:
@@ -32,8 +28,6 @@ services:
     image: redis:7-alpine
     container_name: redis03
     restart: always
-    ports:
-      - 7003:6379
     volumes:
       - ./redis.conf:/etc/redis/redis.conf
     command:
@@ -46,8 +40,6 @@ services:
     image: redis:7-alpine
     container_name: redis04
     restart: always
-    ports:
-      - 7004:6379
     volumes:
       - ./redis.conf:/etc/redis/redis.conf
     command:
@@ -60,8 +52,6 @@ services:
     image: redis:7-alpine
     container_name: redis05
     restart: always
-    ports:
-      - 7005:6379
     volumes:
       - ./redis.conf:/etc/redis/redis.conf
     command:
@@ -74,8 +64,6 @@ services:
     image: redis:7-alpine
     container_name: redis06
     restart: always
-    ports:
-      - 7006:6379
     volumes:
       - ./redis.conf:/etc/redis/redis.conf
     command:
